@@ -3,7 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body{
-    @apply bg-teal-900 font-poppins leading-7 scroll-smooth text-white
+    @apply bg-indigo-900 font-poppins leading-7 scroll-smooth text-white
+}
+.btn{
+    @apply max-w-max inline-block bg-sky-500 px-3 py-5 rounded-md cursor-pointer border-[1px] border-sky-300 hover:bg-white hover:text-indigo-900 transition-all
 }
