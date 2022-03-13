@@ -1,10 +1,10 @@
 import React from 'react'
 import '../../index.css'
 
-const header = () => {
+const Header = () => {
   return (
-    <div>header</div>
+    <div className='font-poppins'>Header</div>
   )
 }
 
-export default header
+export default Header
