@@ -3,9 +3,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =================HTML TAGS=================== */
 body{
-    @apply bg-indigo-900 font-poppins leading-7 scroll-smooth text-white
+    @apply bg-background font-poppins leading-7 scroll-smooth text-white
 }
+a{
+    @apply text-primary
+}
+header{
+    @apply h-screen pt-28 overflow-hidden 
+}
+
+/* ====================BUTTONS===================== */
 .btn{
-    @apply max-w-max inline-block bg-sky-500 px-3 py-5 rounded-md cursor-pointer border-[1px] border-sky-300 hover:bg-white hover:text-indigo-900 transition-all
+    @apply max-w-max inline-block text-primary px-4 py-3 rounded-md cursor-pointer border-[1px] border-primary hover:bg-white hover:text-background hover:border-transparent transition-all
+}
+.btn-primay{
+    @apply bg-primary text-background
+}
+
+/* ==================Header==================== */
+.header__container{
+    @apply h-full text-center relative
+}
+
+/* ==========================CTA==================== */
+.cta{
+    @apply mt-10 flex gap-5 justify-center
 }
