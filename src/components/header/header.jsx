@@ -7,11 +7,11 @@ import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container mx-auto ">
         <h1 className="text-2xl font-light">Hello I'm</h1>
         <h1 className="text-3xl font-semibold">Rakibul Hasan Rifat</h1>
-        <h5 className="font-xl text-gray font-normal">UI/UX Designer and Frontend Developer</h5>
+        <h5 className="font-xl text-slate-400 font-light">UI/UX Designer and Frontend Developer</h5>
         <CTA/>
 
         <HeaderSocials/>

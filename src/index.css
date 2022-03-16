@@ -9,10 +9,13 @@ body{
     @apply bg-background font-poppins leading-7 scroll-smooth text-white
 }
 a{
-    @apply text-primary hover:text-white
+    @apply text-primary hover:text-white inline-block
 }
 header{
-    @apply h-screen pt-28 overflow-hidden 
+    @apply h-screen md:h-[68vh] lg:h-screen pt-28 overflow-hidden 
+}
+section{
+    @apply mt-32 h-screen
 }
 
 /* ====================BUTTONS===================== */
@@ -35,14 +38,13 @@ header{
 
 /* =====================HeaderSOCIALS================== */
 .header__socials{
-    @apply flex flex-col items-center gap-4 absolute left-0 bottom-12 
+    @apply hidden md:flex after:bg-primary flex-col items-center gap-4 absolute left-0 bottom-12 
 }
 
 .header__socials::after{
    content: '';
    width: 1px;
    height: 3rem;
-   background: #42C2FF;
 }
 
 /* ==================IMAGE================ */
@@ -51,5 +53,5 @@ header{
 }
 /* ==================SCROLLDOWN================ */
 .scroll__down{
-    @apply absolute -right-[2.3rem] bottom-20 transform rotate-90 font-light text-[0.9rem]
+    @apply hidden md:inline-block absolute -right-[2.3rem] bottom-20 transform rotate-90 font-light text-[0.9rem]
 }
