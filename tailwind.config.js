@@ -2,6 +2,9 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         'poppins': ['Poppins','sans-serif'],
@@ -16,6 +19,9 @@ module.exports = {
         white: "#fff",
         gray: "#334756",
         
+      },
+      backdropBlur: {
+        customBlur: '15px',
       }
     },
   },

@@ -5,8 +5,11 @@
 @tailwind utilities;
 
 /* =================HTML TAGS=================== */
+html{
+    @apply scroll-smooth
+}
 body{
-    @apply bg-background font-poppins leading-7 scroll-smooth text-white
+    @apply bg-background font-poppins leading-7 text-white
 }
 a{
     @apply text-primary hover:text-white inline-block
@@ -17,7 +20,10 @@ header{
 section{
     @apply mt-32 h-screen
 }
-
+section > h2,
+section > h5{
+    @apply text-center text-white
+}
 /* ====================BUTTONS===================== */
 .btn{
     @apply max-w-max inline-block text-primary px-4 py-3 rounded-md cursor-pointer border-[1px] border-primary hover:bg-white hover:text-background hover:border-transparent transition-all
@@ -54,4 +60,23 @@ section{
 /* ==================SCROLLDOWN================ */
 .scroll__down{
     @apply hidden md:inline-block absolute -right-[2.3rem] bottom-20 transform rotate-90 font-light text-[0.9rem]
+}
+
+
+/* ====================Nav Bar================= */
+/* ====================HTML TAG================ */
+nav{
+    @apply bg-black bg-opacity-30 w-max py-[0.7rem] px-[1.7rem] z-20 fixed left-1/2 transform -translate-x-1/2 bottom-8 flex gap-4 rounded-[3rem] backdrop-blur-customBlur
+}
+nav a{
+    @apply bg-transparent p-[0.9rem] rounded-[50%] flex text-white text-[1.1rem] hover:bg-black/30
+}
+nav a.active{
+    @apply bg-background text-primary
+}
+
+
+/* ========================ABOUT================= */
+.about__me{
+    @apply aspect-square w-full rounded-[2rem] 
 }
