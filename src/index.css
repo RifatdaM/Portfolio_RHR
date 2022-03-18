@@ -19,7 +19,7 @@ header {
   @apply h-screen md:h-[68vh] lg:h-screen pt-28 overflow-hidden;
 }
 section {
-  @apply mt-32 h-screen;
+  @apply mt-32;
 }
 section > h2,
 section > h5 {
@@ -27,6 +27,14 @@ section > h5 {
 }
 svg {
   @apply inline-block;
+}
+
+/* ====================Universile================== */
+.title-small {
+  @apply text-sm font-light;
+}
+.title {
+  @apply text-2xl text-primary font-semibold mb-16;
 }
 /* ====================BUTTONS===================== */
 .btn {
@@ -81,7 +89,7 @@ nav a.active {
 /* ========================ABOUT================= */
 /* ========================Image================= */
 .about__me {
-  @apply aspect-square w-[65%] mx-auto mb-12 md:w-1/2 md:mt-8 md:mb-16 lg:m-0 lg:w-full rounded-[2rem] bg-gradient-to-br from-primary to-transparent grid items-center ;
+  @apply aspect-square w-[65%] mx-auto mb-12 md:w-1/2 md:mt-8 md:mb-16 lg:m-0 lg:w-full rounded-[2rem] bg-gradient-to-br from-primary to-transparent grid items-center;
 }
 
 .about__me img {
@@ -101,12 +109,62 @@ nav a.active {
 .about__card h5 {
   @apply text-[0.9rem];
 }
-.about__card small{
-    @apply text-[0.7rem] text-light font-extralight
+.about__card small {
+  @apply text-[0.7rem] text-light font-extralight;
 }
-.about__content p{
-    @apply mt-4 my-[1.5rem] mx-0 lg:mt-8 lg:mb-[2.6rem] text-light font-extralight
+.about__content p {
+  @apply mt-4 my-[1.5rem] mx-0 lg:mt-8 lg:mb-[2.6rem] text-light font-extralight;
 }
-.about__content{
-@apply text-center md:text-left
+.about__content {
+  @apply text-center md:text-left;
+}
+
+/* =====================EXPERIENCE=================== */
+.experience__container {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8;
+}
+.experience__container > div {
+  @apply bg-backgroundVer w-full md:w-4/5 py-8 px-4 md:p-8 my-0 mx-auto lg:m-0 lg:w-full lg:py-[2.4rem] lg:px-20 border-[1px] border-solid border-transparent rounded-[2rem] hover:bg-transparent hover:border-primaryVer hover:cursor-default transform transition-all;
+}
+.experience__container > div h3 {
+  @apply text-center mb-8 text-primary font-semibold;
+}
+.experience__content {
+  @apply grid grid-cols-2 gap-y-8;
+}
+.experience__details {
+  @apply flex gap-4;
+}
+.experience__content-icon {
+  @apply mt-2 text-primary;
+}
+.experience__content {
+  @apply p-4;
+}
+
+/* =====================Services=================== */
+
+.service__container{
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 md:w-8/12 lg:w-full
+}
+.service{
+  @apply bg-backgroundVer rounded-[2rem] border-2 border-solid border-primary h-fit transition-all duration-300 hover:bg-transparent hover:border-primaryVer hover:cursor-default
+}
+.service__head{
+  @apply bg-primary p-8 rounded-t-[1.6rem] overflow-hidden shadow-md
+}
+.service__head h3{
+  @apply text-background text-base text-center
+}
+.service__list{
+  @apply p-8 
+}
+.service__list li{
+  @apply flex gap-4 mb-[0.8rem]
+}
+.service__list p{
+@apply text-sm font-light
+}
+.service__list-icon{
+  @apply text-primary mt-[4px]
 }
