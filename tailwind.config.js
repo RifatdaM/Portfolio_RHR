@@ -10,13 +10,28 @@ module.exports = {
         'poppins': ['Poppins','sans-serif'],
       },
       colors:{
-        background: "#082032",
-        backgroundVer:"#2C394B",
-        primary: "#519872",
+        // Blue
+        // background: "#082032",       
+        // backgroundVer:"#2C394B",
         // primary: "#42C2FF",
+        // primaryVer: "#68ceff",
 
+        // Green
+        background: "#080f0b",
+        backgroundVer:"#101e17",
+        primary: "#519872",
+        primaryVer:"#74ad8e",
+
+        // Red
+        // background: "#130202",
+        // backgroundVer:"#260404",
+        // primary: "#BD1616",
+        // primaryVer:"#ca4545",
+
+        // Text
         dark: "#111827",
         white: "#fff",
+        light: "#d4d4d4",
         gray: "#334756",
         
       },

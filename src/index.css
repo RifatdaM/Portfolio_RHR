@@ -1,82 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 /* =================HTML TAGS=================== */
-html{
-    @apply scroll-smooth
+html {
+  @apply scroll-smooth;
 }
-body{
-    @apply bg-background font-poppins leading-7 text-white
+body {
+  @apply bg-background font-poppins leading-7 text-white;
 }
-a{
-    @apply text-primary hover:text-white inline-block
+a {
+  @apply text-primary hover:text-white inline-block;
 }
-header{
-    @apply h-screen md:h-[68vh] lg:h-screen pt-28 overflow-hidden 
+header {
+  @apply h-screen md:h-[68vh] lg:h-screen pt-28 overflow-hidden;
 }
-section{
-    @apply mt-32 h-screen
+section {
+  @apply mt-32 h-screen;
 }
 section > h2,
-section > h5{
-    @apply text-center text-white
+section > h5 {
+  @apply text-center text-white;
+}
+svg {
+  @apply inline-block;
 }
 /* ====================BUTTONS===================== */
-.btn{
-    @apply max-w-max inline-block text-primary px-4 py-3 rounded-md cursor-pointer border-[1px] border-primary hover:bg-white hover:text-background hover:border-transparent transition-all
+.btn {
+  @apply max-w-max inline-block text-primary px-4 py-3 rounded-md cursor-pointer border-[1px] border-primary hover:bg-white hover:text-background hover:border-transparent transition-all;
 }
-.btn-primay{
-    @apply bg-primary text-background
+.btn-primay {
+  @apply bg-primary text-background;
 }
 
 /* ==================Header==================== */
-.header__container{
-    @apply h-full text-center relative
+.header__container {
+  @apply h-full text-center relative;
 }
 
 /* ==========================CTA==================== */
-.cta{
-    @apply mt-10 flex gap-5 justify-center
+.cta {
+  @apply mt-10 flex gap-5 justify-center;
 }
 
 /* =====================HeaderSOCIALS================== */
-.header__socials{
-    @apply hidden md:flex after:bg-primary flex-col items-center gap-4 absolute left-0 bottom-12 
+.header__socials {
+  @apply hidden md:flex after:bg-primary flex-col items-center gap-4 absolute left-0 bottom-12;
 }
 
-.header__socials::after{
-   content: '';
-   width: 1px;
-   height: 3rem;
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 3rem;
 }
 
 /* ==================IMAGE================ */
-.header__container .me{
-    @apply bg-gradient-to-b from-primary to-transparent w-80 h-[30rem] absolute left-[calc(50%-10rem)] mt-16 rounded-tl-[12rem] rounded-tr-[12rem] overflow-hidden pt-20 px-6 pb-6
+.header__container .me {
+  @apply bg-gradient-to-b from-primary to-transparent w-80 h-[30rem] absolute left-[calc(50%-10rem)] mt-16 rounded-tl-[12rem] rounded-tr-[12rem] overflow-hidden pt-20 px-6 pb-6;
 }
 /* ==================SCROLLDOWN================ */
-.scroll__down{
-    @apply hidden md:inline-block absolute -right-[2.3rem] bottom-20 transform rotate-90 font-light text-[0.9rem]
+.scroll__down {
+  @apply hidden md:inline-block absolute -right-[2.3rem] bottom-20 transform rotate-90 font-light text-[0.9rem];
 }
-
 
 /* ====================Nav Bar================= */
 /* ====================HTML TAG================ */
-nav{
-    @apply bg-black bg-opacity-30 w-max py-[0.7rem] px-[1.7rem] z-20 fixed left-1/2 transform -translate-x-1/2 bottom-8 flex gap-4 rounded-[3rem] backdrop-blur-customBlur
+nav {
+  @apply bg-black bg-opacity-30 w-max py-[0.7rem] px-[1.7rem] z-20 fixed left-1/2 transform -translate-x-1/2 bottom-8 flex gap-4 rounded-[3rem] backdrop-blur-customBlur;
 }
-nav a{
-    @apply bg-transparent p-[0.9rem] rounded-[50%] flex text-white text-[1.1rem] hover:bg-black/30
+nav a {
+  @apply bg-transparent p-[0.9rem] rounded-[50%] flex text-white text-[1.1rem] hover:bg-black/30;
 }
-nav a.active{
-    @apply bg-background text-primary
+nav a.active {
+  @apply bg-background text-primary;
 }
-
 
 /* ========================ABOUT================= */
-.about__me{
-    @apply aspect-square w-full rounded-[2rem] 
+/* ========================Image================= */
+.about__me {
+  @apply aspect-square w-[65%] mx-auto mb-12 md:w-1/2 md:mt-8 md:mb-16 lg:m-0 lg:w-full rounded-[2rem] bg-gradient-to-br from-primary to-transparent grid items-center ;
+}
+
+.about__me img {
+  @apply rounded-[2rem] overflow-hidden transform rotate-[10deg] hover:rotate-0 transition-all duration-300;
+}
+
+/* =======================Cards================== */
+.about__cards {
+  @apply grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6;
+}
+.about__card {
+  @apply bg-backgroundVer border-[1px] border-solid border-transparent rounded-[1rem] p-8 text-center hover:bg-transparent hover:border-primaryVer transition-all hover:cursor-default;
+}
+.about__icon {
+  @apply text-primary text-[1.4rem] mb-4;
+}
+.about__card h5 {
+  @apply text-[0.9rem];
+}
+.about__card small{
+    @apply text-[0.7rem] text-light font-extralight
+}
+.about__content p{
+    @apply mt-4 my-[1.5rem] mx-0 lg:mt-8 lg:mb-[2.6rem] text-light font-extralight
+}
+.about__content{
+@apply text-center md:text-left
 }

@@ -10,7 +10,7 @@ const About = () => {
     <section id="about">
       <h5>Get To Know</h5>
       <h2 className="text-2xl text-primary font-semibold">About Me</h2>
-      <div className="container mt-16 grid grid-cols-[35%,50%] gap-[15%]">
+      <div className="container mt-16 grid grid-cols-1 gap-0 lg:grid-cols-[35%,50%] lg:gap-[15%]">
         <div className="about__me">
           <div className="about__me-image">
             <img src={ME} alt="Rakibul hasan Rifat" />
