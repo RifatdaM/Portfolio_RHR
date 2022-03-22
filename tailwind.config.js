@@ -22,6 +22,7 @@ module.exports = {
         backgroundVer:"#101e17",
         primary: "#519872",
         primaryVer:"#74ad8e",
+        primaryLight:"#cbe0d5",
 
         // Red
         // background: "#130202",

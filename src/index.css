@@ -177,8 +177,17 @@ nav a.active {
   @apply bg-backgroundVer p-[1.3rem] rounded-[2rem] border-2 border-solid border-transparent transition-all hover:border-primaryVer hover:bg-transparent
 }
 .portfolio__item-img{
-  @apply rounded-[1.5rem] overflow-hidden
+  @apply rounded-[1.5rem] overflow-hidden 
+}
+.portfolio__item-img img{
+  @apply object-cover aspect-[4/3]
 }
 .portfolio__item h3{
-  @apply mt-5 mb-8
+  @apply mt-5 mb-4
+}
+.item-cta{
+  @apply flex flex-wrap gap-4 mb-4 
+}
+.item-label{
+  @apply cursor-pointer text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-primary bg-primaryLight last:mr-0 mr-1
 }
