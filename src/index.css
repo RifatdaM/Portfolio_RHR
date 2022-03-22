@@ -168,3 +168,17 @@ nav a.active {
 .service__list-icon{
   @apply text-primary mt-[4px]
 }
+
+/* =============================Portfolio======================== */
+.portfolio__container{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10
+}
+.portfolio__item{
+  @apply bg-backgroundVer p-[1.3rem] rounded-[2rem] border-2 border-solid border-transparent transition-all hover:border-primaryVer hover:bg-transparent
+}
+.portfolio__item-img{
+  @apply rounded-[1.5rem] overflow-hidden
+}
+.portfolio__item h3{
+  @apply mt-5 mb-8
+}
