@@ -194,7 +194,7 @@ nav a.active {
 
 /* ========================== testimonials ========================*/
 .client__avatar{
-  @apply w-16 aspect-square overflow-hidden rounded-lg border-[0.4rem] border-solid border-primaryVer mx-auto mb-4
+  @apply w-16 aspect-square overflow-hidden rounded-lg border-[0.2rem] border-solid border-primaryVer mx-auto mb-4
 }
 .testimonial{
   @apply bg-backgroundVer text-center p-8 rounded-[2rem] select-none
@@ -202,6 +202,4 @@ nav a.active {
 .client__review{
 @apply text-light font-light block w-full md:w-[80%] mt-[0.8rem] mx-auto  
 }
-.swiper-pagination-clickable .swiper-pagination-bullet{
-  background: #519872;
-}
+/* ========================== contact ============================ */
