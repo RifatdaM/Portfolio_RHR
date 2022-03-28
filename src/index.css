@@ -191,3 +191,17 @@ nav a.active {
 .item-label{
   @apply cursor-pointer text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-primary bg-primaryLight last:mr-0 mr-1
 }
+
+/* ========================== testimonials ========================*/
+.client__avatar{
+  @apply w-16 aspect-square overflow-hidden rounded-lg border-[0.4rem] border-solid border-primaryVer mx-auto mb-4
+}
+.testimonial{
+  @apply bg-backgroundVer text-center p-8 rounded-[2rem] select-none
+}
+.client__review{
+@apply text-light font-light block w-full md:w-[80%] mt-[0.8rem] mx-auto  
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  background: #519872;
+}
