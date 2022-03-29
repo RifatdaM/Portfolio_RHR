@@ -13,7 +13,7 @@ const Footer = () => {
         href="#"
         className="text-background text-3xl font-medium mb-8 inline-block"
       >
-        Rakibul Hasan
+        Rakibul Hasan Rifat
       </a>
 
       <ul className="flex flex-wrap justify-center gap-8 mx-auto mb-12">
