@@ -1,22 +1,38 @@
-import React from "react";
+import React , { useRef } from "react";
 import "../../index.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsMessenger, BsWhatsapp } from "react-icons/bs";
+import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_t28kjhc', 'template_yeun135', form.current, 'ebwI3WRixJZDTyDfb')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset()
+  };
+
   return (
     <section id="contact">
       <h5 className="title-small">Get In Touch</h5>
       <h2 className="title">Contact</h2>
 
-      <div className="container w-[54%] grid grid-cols-1 md:grid-cols-[30%,58%] gap-[12%] ">
-        <div className="contact__options">
+      <div className="container w-4/5 lg:w-[54%] grid grid-cols-1 lg:grid-cols-[30%,58%] gap-[12%] ">
+        <div className="flex flex-col gap-5 ">
           <atrical className="contact__option">
-            <HiOutlineMail />
-            <h4>Email</h4>
-            <h5>rifat20089@hotmail.com</h5>
-            <a
-              href="mailto:rifat20089@hotmail.com"
+            <HiOutlineMail className="contact__icon"/>
+            <h4 className="text-md">Email</h4>
+            <h5 className="text-xs md:text-sm font-light text-light ">rifat.hasan.rakib@gmail.com</h5>
+            <a className="mt-3 inline-block text-xs "
+              href="mailto:rifat.hasan.rakib@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -24,18 +40,18 @@ const Contacts = () => {
             </a>
           </atrical>
           <atrical className="contact__option">
-            <BsMessenger />
-            <h4>Messenger</h4>
-            <h5>Rakibul Hasan</h5>
-            <a href="https://m.me/rifatdam" target="_blank" rel="noreferrer">
+            <BsMessenger className="contact__icon"/>
+            <h4 className="text-md">Messenger</h4>
+            <h5 className="text-sm font-light text-light ">Rakibul Hasan</h5>
+            <a className="mt-3 inline-block text-xs " href="https://m.me/rifatdam" target="_blank" rel="noreferrer">
               Send a Message
             </a>
           </atrical>
           <atrical className="contact__option">
-            <BsWhatsapp />
-            <h4>Whatsapp</h4>
-            <h5>+8801625842916</h5>
-            <a
+            <BsWhatsapp className="contact__icon"/>
+            <h4 className="text-md">Whatsapp</h4>
+            <h5 className="text-sm font-light text-light ">+8801625842916</h5>
+            <a className="mt-3 inline-block text-xs "
               href="https://wa.me/8801625842916"
               target="_blank"
               rel="noreferrer"
@@ -45,7 +61,7 @@ const Contacts = () => {
           </atrical>
         </div>
         {/* Form */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5 ">
           <input
             type="text"
             name="name"
@@ -55,7 +71,6 @@ const Contacts = () => {
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
-            id=""
             cols="30"
             rows="7"
             placeholder="Your Message"

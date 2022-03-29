@@ -203,3 +203,13 @@ nav a.active {
 @apply text-light font-light block w-full md:w-[80%] mt-[0.8rem] mx-auto  
 }
 /* ========================== contact ============================ */
+.contact__option{
+  @apply bg-backgroundVer p-5 rounded-[1.2rem] text-center border-[1px] border-solid border-transparent hover:bg-background hover:border-primaryVer transition-all
+}
+.contact__icon{
+  @apply text-2xl mb-2 text-primary
+}
+/* ========================== form ============================ */
+input, textarea{
+  @apply w-full p-6 rounded-md bg-transparent border border-solid border-primaryVer resize-none
+}

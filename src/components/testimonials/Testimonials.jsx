@@ -39,7 +39,7 @@ const Testimonials = () => {
         spaceBetween={40}
         slidesPerView={1}
         Autoplay
-        className="container w-[9%] md:w-[60%] lg:w-[40%] pb-16 mySwiper"
+        className="container w-[96%] md:w-[60%] lg:w-[40%] pb-16 mySwiper"
       >
         {data.map(({ avatar, name, review }, index) => {
           return (
