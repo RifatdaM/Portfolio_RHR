@@ -93,6 +93,20 @@ const Experience = () => {
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__content-icon"/>
               <div className="experience__details-text">
+                <h4>Next JS</h4>
+                <small className="text-light font-light">Beginner</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__content-icon"/>
+              <div className="experience__details-text">
+                <h4>Vue JS</h4>
+                <small className="text-light font-light">Beginner</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__content-icon"/>
+              <div className="experience__details-text">
                 <h4>React Native</h4>
                 <small className="text-light font-light">Beginner</small>
               </div>

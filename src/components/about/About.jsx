@@ -37,10 +37,7 @@ const About = () => {
           </div>
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, at? Magnam veniam consequatur, enim placeat maxime
-            laudantium odit laboriosam eaque deleniti! Eos voluptatem suscipit
-            ducimus maiores! Repellendus, laboriosam! Exercitationem, et.
+            Hello World! This is <b className="text-primary">Rakibul Hasan</b>. An <i>UI/UX designer and Frontend developer</i>. In my very last semester of completing my graduation in Computer Science and Engendering from <i>IUBAT - International University of Business Agriculture and Technology.</i> Currently working as an <i>UI/UX designer and Frontend developer</i> at <a href="https://mohasagorit.solutions/"><b>Mohasagor IT Solutions</b></a>
           </p>
 
           <a href="#contact" className="btn btn-primay">Let's Talk</a>
