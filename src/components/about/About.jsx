@@ -22,22 +22,22 @@ const About = () => {
             <article className="about__card">
               <BsAward className="about__icon" />
               <h5>Experience</h5>
-              <small>2+ years</small>
+              <small>3+ years</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>50+ Worldwide</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>20+ completed</small>
+              <small>30+ completed</small>
             </article>
           </div>
 
           <p>
-            Hello World! This is <b className="text-primary">Rakibul Hasan</b>. An <i>UI/UX designer and Frontend developer</i>. In my very last semester of completing my graduation in Computer Science and Engendering from <i>IUBAT - International University of Business Agriculture and Technology.</i> Currently working as an <i>UI/UX designer and Frontend developer</i> at <a href="https://mohasagorit.solutions/"><b>Mohasagor IT Solutions</b></a>
+            Hello World! This is <b className="text-primary">Rakibul Hasan</b>. A <i>Software Engineer (Frontend)</i>. I have completed my graduation in Computer Science and Engineering from <i>IUBAT - International University of Business Agriculture and Technology.</i> Currently working as a <i>Software Engineer (Frontend)</i> at <a href="https://dtechonline.net/"><b>Dtech Online Limited</b></a>
           </p>
 
           <a href="#contact" className="btn btn-primay">Let's Talk</a>
