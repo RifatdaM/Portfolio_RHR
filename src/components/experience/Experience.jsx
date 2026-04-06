@@ -125,6 +125,13 @@ const Experience = () => {
                 <small className="text-light font-light">Intermediate</small>
               </div>
             </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__content-icon"/>
+              <div className="experience__details-text">
+                <h4>GSAP</h4>
+                <small className="text-light font-light">Intermediate</small>
+              </div>
+            </article>
           </div>
         </div>
         
